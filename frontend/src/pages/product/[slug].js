@@ -112,12 +112,14 @@ export const getStaticPaths = async () => {
 
 export const getStaticProps = async ({ params: { slug }}) => {
   const query = `*[_type == "product" && slug.current == '${slug}'][0]`;
-  const productsQuery = '*[_type == "product"]{name, details, price, "slug": slug.current, image}'
+  const productsQuery = '*[_type == "product"]'
 
   const [product, products] = await Promise.all([
     client.fetch(query),
     client.fetch(productsQuery)
   ]);
+
+  console.log("PRODUCT/PRODUCTS", product, products)
 
   return {
     props: { product, products }

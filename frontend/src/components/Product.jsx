@@ -5,6 +5,7 @@ import { urlFor } from '../../lib/client'
 
 const Product = ({product: {image, name, slug, price}  }) => {
   return (
+    <>
     <div>
       <Link href={`/product/${slug.current}`}>
         <div className='product-card'>
@@ -19,6 +20,7 @@ const Product = ({product: {image, name, slug, price}  }) => {
         </div>
       </Link>
     </div>
+    </>
   )
 }
 

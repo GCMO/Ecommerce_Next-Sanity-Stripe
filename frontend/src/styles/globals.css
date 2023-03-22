@@ -64,8 +64,14 @@ width: 100%;
     margin-left: 6px;
 }
 .logo{
-  color: gray;
+  color: rgb(247, 246, 246);
   font-size: 18px;
+  height: 23px;
+  width: 150px;
+  text-align: center;
+  margin-left: 10px;
+  border-radius: 3px;
+  background-image: linear-gradient(rgba(4, 30, 123, 0.7), rgba(60, 174, 48, 0.7));
 }
 .cart-icon{
   font-size: 25px;
@@ -75,10 +81,15 @@ width: 100%;
   transition: transform .4s ease;
   border: none;
   background-color: transparent;
+  float: right;
+  margin-top: -26px;
+  margin-right: 20px;
 }
+
 .cart-icon:hover{
-  transform: scale(1.1,1.1);
+  transform: scale(1.5,1.5);
 }
+
 .cart-item-qty{
   position: absolute;
   right: -8px;
@@ -128,33 +139,48 @@ width: 100%;
   padding: 100px 40px;
   background-image: url(/earthyBG.png);
   /* background-image: linear-gradient(rgba(4, 30, 123, 0.7), rgba(60, 174, 48, 0.7)); */
-  border-radius: 15px;
   position: relative;
-  height: 500px;
-  line-height: 0.9; 
   width: 100%;
+  height: 500px;
+  border-radius: 15px;
+  line-height: 0.9; 
+  margin-top: 10px;
 }
 .hero-banner-container .beats-solo{
-  font-size: 12px;
+  font-size: 24px;
+  width: 520px;
   color:white;
+  
 }
 .hero-banner-container button{
    border-radius: 15px;
-  padding: 10px 16px;
+  padding: 10px 26px;
   background-color: #f02d34;
   color: white;
   border: none;
   margin-top: 40px;
   font-size: 18px;
-  font-weight: 500;
+  font-weight: 600;
   cursor: pointer;
   z-index:10000 !important;
 }
 
 .hero-banner-container h3{
   font-size: 3.5rem;
-  margin-top: 18px;
+  margin-top: 35px;
   color: white;
+  text-shadow: 0 0 5px #fff,
+                 0 0 2px #fff, 
+                 0 0 10px green, 
+                 0 0 30px green, 
+                 0 0 40px green, 
+                 0 0 55px green, 
+                 0 0 70px green;
+  /* background: #121FCF;
+  background: linear-gradient(to right, #0ec105 0%, #082c06 71%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; */
+
 }
 .hero-banner-container h1{
   color: white;
@@ -164,25 +190,33 @@ width: 100%;
 }
 .hero-banner-image{
   position: absolute;
-  top: 7%;
-  right:7%;
-  width: 350px;
+    top: 9%;
+  right:4%;
+  width: 500px;
   height: 350px;
   border-radius: 15px;
 }
 
+.hero-banner-text {
+  color: #a09d9d;
+  width: 500px;
+  margin-top: 2%;
+  color: #ebebeb;
+  line-height: 20px;
+}
+
 .desc{
 position: absolute;
-right: 7.5%;
-bottom: 16%;
-width: 350px;
+right: 5%;
+bottom: 15%;
+width: 450px;
 line-height: 1.5;
 display: flex;
 flex-direction: column;
 color: #324d67;
 }
 .desc p{
-  color: #5f5f5f;
+  color: #050404;
   font-weight: 100;
 text-align: end;
 }

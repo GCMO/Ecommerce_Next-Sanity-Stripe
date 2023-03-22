@@ -10,9 +10,10 @@ const Navbar = () => {
 
   return (
     <div className='navbar-Container' >
-      <p className='logo'>Sexy Avocados</p>
-      <Link href='/'></Link>
-
+      <p className='logo'>
+      <Link href='/'>Fresh Avocados</Link>
+      </p>
+      
       <button 
           type='button' 
           className='cart-icon' 
