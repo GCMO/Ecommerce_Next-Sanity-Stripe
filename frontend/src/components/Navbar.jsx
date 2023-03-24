@@ -9,10 +9,24 @@ const Navbar = () => {
   const { showCart, setShowCart, totalQuantities } = useStateContext();
 
   return (
-    <div className='navbar-Container' >
+    <div className='navbar-container' >
       <p className='logo'>
-      <Link href='/'>Fresh Avocados</Link>
+        <Link href='/'>FRESH AVOCADOS</Link>
       </p>
+
+      <p className='about'>
+        <Link href='/about'>ABOUT</Link>
+      </p>
+
+      <p className='recipes'>
+        <Link href='/recipes'>RECIPES</Link>
+      </p>
+
+      <p className='contact'>
+        <Link href='/contact'>CONTACT </Link>
+      </p>
+
+
       
       <button 
           type='button' 
